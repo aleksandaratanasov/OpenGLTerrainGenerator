@@ -501,7 +501,7 @@ int main( int argc, char **argv )
 
     if ( argc == 1 ) {
         // start video capture from camera
-        cap = new cv::VideoCapture(1);
+        cap = new cv::VideoCapture(0);
     } else if ( argc == 2 ) {
         // start video capture from file
         cap = new cv::VideoCapture(argv[1]);
